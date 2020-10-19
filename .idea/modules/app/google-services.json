@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "706784841886",
+    "firebase_url": "https://bwa-mov-e9ecd.firebaseio.com",
+    "project_id": "bwa-mov-e9ecd",
+    "storage_bucket": "bwa-mov-e9ecd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706784841886:android:5ad747de419aad5ed06b8f",
+        "android_client_info": {
+          "package_name": "id.taufiq.bwamov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706784841886-opisvo9r36jqimfvl5ubtqrjn7s6pdfu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.taufiq.bwamov",
+            "certificate_hash": "8f7fe2e70e84d798547e8aa7b860b28033974c80"
+          }
+        },
+        {
+          "client_id": "706784841886-6srnqpvj5cu33dab607c315kk9108g78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7OcaeDHCuHCPuV_CohU4WidNnpzkIDR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706784841886-6srnqpvj5cu33dab607c315kk9108g78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

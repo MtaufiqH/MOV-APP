@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+
+    <color name="blue_bg">#14153D</color>
+    <color name="pink_bg">#FF2667</color>
+    <color name="blue_grey_bg">#292A50</color>
+    <color name="bg_border">#5A5B77</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="star_rating_color">#FAF078</color>
+    <color name="booked_color">#3E3F69</color>
+    <color name="cyan_color">#1ABC9C</color>
+
+
+
+</resources>

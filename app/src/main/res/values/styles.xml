@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--  App Theme without actionBar  -->
+    <style name="AppTheme.noActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="textStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="textStyleBold" parent="textStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
