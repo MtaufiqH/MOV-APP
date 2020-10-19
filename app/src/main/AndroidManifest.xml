@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noActionBar">
         <activity android:name=".DetailMovieActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".home.HomeActivity" />
         <activity android:name=".boarding.OnBoardingOneActivity" />
         <activity android:name=".boarding.OnBoardingTwoActivity" />
         <activity android:name=".boarding.OnBoardingThreeActivity" />

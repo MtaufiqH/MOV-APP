@@ -25,7 +25,6 @@ class SignUpActivity : AppCompatActivity() {
         databaseReference = FirebaseDatabase.getInstance().getReference("User")
 
         btn_lanjutkan.setOnClickListener {
-
             val iUsername = et_input_username.text.toString()
             val iEmail = et_input_email.text.toString()
             val iPassword = et_input_password.text.toString()

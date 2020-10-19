@@ -3,7 +3,7 @@ package id.taufiq.bwamov.login.signin
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
-import id.taufiq.bwamov.HomeActivity
+import id.taufiq.bwamov.home.HomeActivity
 import id.taufiq.bwamov.R
 import id.taufiq.bwamov.login.signup.SignUpActivity
 import id.taufiq.bwamov.model.Users

@@ -15,7 +15,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
-import id.taufiq.bwamov.HomeActivity
+import id.taufiq.bwamov.home.HomeActivity
 import id.taufiq.bwamov.R
 import id.taufiq.bwamov.utils.Preferences
 import id.taufiq.bwamov.utils.showToast
@@ -67,6 +67,11 @@ class SignUpPhotoActivity : AppCompatActivity() {
                 // system OS < Marshmallow
                 pickImage()
             }
+        }
+
+
+        btn_delete_image.setOnClickListener {
+
         }
     }
 
