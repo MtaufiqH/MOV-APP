@@ -17,7 +17,7 @@ import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
 import id.taufiq.bwamov.home.HomeActivity
 import id.taufiq.bwamov.R
-import id.taufiq.bwamov.utils.Preferences
+import id.taufiq.bwamov.utils.MyPreferences
 import id.taufiq.bwamov.utils.showToast
 import id.taufiq.bwamov.utils.startActivity
 import kotlinx.android.synthetic.main.sign_up_photo_activity.*
@@ -27,7 +27,7 @@ class SignUpPhotoActivity : AppCompatActivity() {
 
 
     private lateinit var storageRefs: StorageReference
-    private lateinit var prefs: Preferences
+    private lateinit var prefs: MyPreferences
 
     companion object {
         //image pick code
@@ -41,7 +41,7 @@ class SignUpPhotoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sign_up_photo_activity)
 
-        prefs = Preferences(this)
+        prefs = MyPreferences(this)
 
         storageRefs = FirebaseStorage.getInstance().reference
 

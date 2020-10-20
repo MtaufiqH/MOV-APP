@@ -7,7 +7,7 @@ import id.taufiq.bwamov.home.HomeActivity
 import id.taufiq.bwamov.R
 import id.taufiq.bwamov.login.signup.SignUpActivity
 import id.taufiq.bwamov.model.Users
-import id.taufiq.bwamov.utils.Preferences
+import id.taufiq.bwamov.utils.MyPreferences
 import id.taufiq.bwamov.utils.startActivity
 import id.taufiq.bwamov.utils.showToast
 import kotlinx.android.synthetic.main.sign_in_activity.*
@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.sign_in_activity.*
 class SignInActivity : AppCompatActivity() {
 
     lateinit var database: DatabaseReference
-    lateinit var prefs: Preferences
+    lateinit var prefs: MyPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +24,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(R.layout.sign_in_activity)
 
         database = FirebaseDatabase.getInstance().getReference("User")
-        prefs = Preferences(this)
+        prefs = MyPreferences(this)
 
 
         // SET PREFERENCE BOARDING to 1

@@ -6,7 +6,7 @@ import android.content.Context
  * Created By Taufiq on 10/17/2020.
  *
  */
-class Preferences(context: Context) {
+class MyPreferences(context: Context) {
 
     companion object {
         const val PREFS = "preferences"

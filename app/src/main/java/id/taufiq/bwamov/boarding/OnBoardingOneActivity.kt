@@ -4,13 +4,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import id.taufiq.bwamov.R
 import id.taufiq.bwamov.login.signin.SignInActivity
-import id.taufiq.bwamov.utils.Preferences
+import id.taufiq.bwamov.utils.MyPreferences
 import id.taufiq.bwamov.utils.startActivity
 import kotlinx.android.synthetic.main.activity_on_boarding_one.*
 
 class OnBoardingOneActivity : AppCompatActivity() {
 
-    lateinit var prefs: Preferences
+    lateinit var prefs: MyPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class OnBoardingOneActivity : AppCompatActivity() {
         setContentView(R.layout.activity_on_boarding_one)
 
         // set prefs to 1
-        prefs = Preferences(this)
+        prefs = MyPreferences(this)
 
         if (prefs.getValue("BOARDING_STATUS").equals("1")) { startActivity(SignInActivity::class.java)}
 
