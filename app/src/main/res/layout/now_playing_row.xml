@@ -39,6 +39,7 @@
         tools:text="One Piece"
         android:textColor="@android:color/white"
         android:textSize="14sp"
+        android:fontFamily="@font/montserat_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
@@ -52,6 +53,7 @@
         tools:text="Adventure"
         android:textColor="@android:color/white"
         android:textSize="11sp"
+        android:fontFamily="@font/montserat_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_judul_movie"
         app:layout_constraintTop_toBottomOf="@+id/tv_judul_movie" />
@@ -61,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="9.2"
+        android:fontFamily="@font/montserat_light"
         android:textColor="@android:color/white"
         android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_genre_movie"

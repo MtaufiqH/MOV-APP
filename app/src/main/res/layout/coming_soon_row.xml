@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserat_regular"
         android:textColor="@android:color/white"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/cardView"
@@ -44,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
+        android:fontFamily="@font/montserat_light"
         android:textColor="@android:color/white"
         android:textSize="11sp"
         app:layout_constraintStart_toStartOf="@+id/tv_judul_movie"
@@ -54,13 +56,14 @@
         android:id="@+id/tv_rating_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="n/a"
+        android:fontFamily="@font/montserat_light"
         android:textColor="@android:color/white"
         android:textSize="11sp"
         app:drawableLeftCompat="@drawable/ic_star_24px"
         app:layout_constraintBottom_toBottomOf="@+id/tv_genre_movie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_judul_movie"
-        android:text="n/a" />
+        app:layout_constraintTop_toTopOf="@+id/tv_judul_movie" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

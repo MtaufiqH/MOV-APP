@@ -7,6 +7,7 @@
     tools:context=".home.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        tools:background="@color/blue_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -16,7 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
-            android:text="Taufiq Hidayat"
+            tools:text="Taufiq Hidayat"
+            android:fontFamily="@font/montserat_semi_bold"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -40,13 +42,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
-            android:drawableStart="@drawable/ic_account_balance_wallet_24px"
             android:drawablePadding="8dp"
             tools:text="IDR 200.000"
+            android:fontFamily="@font/montserat_light"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name_user" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_user"
+            app:drawableStartCompat="@drawable/ic_account_balance_wallet_24px" />
 
         <TextView
             android:id="@+id/textView9"
@@ -56,6 +59,8 @@
             android:layout_marginTop="32dp"
             android:text="@string/now_playing"
             android:textAllCaps="true"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserat_light"
             android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/wallet_user" />
@@ -78,6 +83,8 @@
             android:layout_marginTop="24dp"
             android:text="@string/coming_soon"
             android:textAllCaps="true"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserat_light"
             android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rv_now_playing" />
@@ -93,6 +100,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintBottom_toBottomOf="@+id/photo_user"
+            app:layout_constraintEnd_toEndOf="@+id/photo_user"
+            app:layout_constraintStart_toStartOf="@+id/photo_user"
+            app:layout_constraintTop_toTopOf="@+id/photo_user" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
