@@ -87,7 +87,8 @@ class HomeFragment : Fragment() {
 
                 }
 
-                rv_now_playing.adapter = ComingSoonAdapter(listOfData){
+                rv_coming_soon.adapter = ComingSoonAdapter(listOfData){
+                    context?.showToast("Clicked ${it.judul}")
 
                 }
 
