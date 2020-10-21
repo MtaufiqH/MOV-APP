@@ -52,7 +52,7 @@ class NowPlayingAdapter(
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-       contextAdapter = parent.context
+        contextAdapter = parent.context
 
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.now_playing_row, parent, false)

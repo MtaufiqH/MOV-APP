@@ -8,10 +8,10 @@
     tools:context=".DetailMovieActivity">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/poster_header_detail"
         android:layout_width="0dp"
         android:layout_height="250dp"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:background="@drawable/transparent_gradient_blue"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/poster_header_detail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline" />
@@ -35,28 +35,30 @@
         app:layout_constraintGuide_begin="200dp" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/title_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:text="Avengers: Infinity War"
+        tools:text="Avengers: Infinity War"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserat_regular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/poster_header_detail" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/genre_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
-        android:text="Action, Sci-fi, Kids"
+        tools:text="Action, Sci-fi, Kids"
         android:textColor="@color/color_white"
-        android:textSize="11sp"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserat_light"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/title_detail" />
 
     <TextView
         android:id="@+id/textView13"
@@ -64,19 +66,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
-        android:text="Storyboard"
+        android:text="@string/storyboard"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserat_regular"
         android:textColor="@color/color_white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/genre_detail" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/description_detail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="24dp"
-        android:text="@string/storyboard_desc"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserat_light"
+        tools:text="@string/storyboard_desc"
         android:textColor="@color/color_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,23 +94,27 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
-        android:text="Storyboard"
+        android:text="@string/who_s_played"
+        android:textSize="14sp"
+        android:fontFamily="@font/montserat_regular"
         android:textColor="@color/color_white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/description_detail" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_who_played"
         android:layout_width="0dp"
-        android:layout_height="58dp"
+        android:layout_height="75dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
+        tools:listitem="@layout/who_played_row"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_pilih_bangku"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -112,22 +122,25 @@
         android:layout_marginBottom="24dp"
         android:background="@drawable/btn_bg_pink"
         android:text="Pilih Bangku"
+        android:fontFamily="@font/montserat_semi_bold"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_rating_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:text="9.7"
+        android:fontFamily="@font/montserat_light"
+        android:textSize="11sp"
         android:textColor="@color/color_white"
         android:drawablePadding="2dp"
         android:drawableStart="@drawable/ic_star_24px"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/poster_header_detail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

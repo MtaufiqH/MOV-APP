@@ -51,4 +51,6 @@ selamat menikmati film</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="movie_posters">movie posters</string>
+    <string name="storyboard">Storyboard</string>
+    <string name="who_s_played">Who\'s Played</string>
 </resources>

@@ -1,5 +1,6 @@
 package id.taufiq.bwamov.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
+import id.taufiq.bwamov.DetailMovieActivity
 import id.taufiq.bwamov.R
 import id.taufiq.bwamov.adapter.ComingSoonAdapter
 import id.taufiq.bwamov.adapter.NowPlayingAdapter
@@ -83,12 +85,18 @@ class HomeFragment : Fragment() {
                 }
 
                 rv_now_playing.adapter = NowPlayingAdapter(listOfData) {
-                    context?.showToast("Clicked ${it.judul}")
+                    val intentDetailNowPlaying = Intent(context,DetailMovieActivity::class.java)
+                        .putExtra("MOVIES_DATA", it)
+                    startActivity(intentDetailNowPlaying)
 
                 }
 
                 rv_coming_soon.adapter = ComingSoonAdapter(listOfData){
-                    context?.showToast("Clicked ${it.judul}")
+
+                    val intentDetailComingSoon = Intent(context,DetailMovieActivity::class.java)
+                        .putExtra("MOVIES_DATA", it)
+                    startActivity(intentDetailComingSoon)
+
 
                 }
 
