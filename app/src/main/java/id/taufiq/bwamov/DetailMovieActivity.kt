@@ -1,16 +1,16 @@
 package id.taufiq.bwamov
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.google.firebase.database.*
 import id.taufiq.bwamov.adapter.WhoPlayedAdapter
+import id.taufiq.bwamov.checkout.PilihBangkuActivity
 import id.taufiq.bwamov.model.Film
 import id.taufiq.bwamov.model.Play
 import id.taufiq.bwamov.utils.showToast
-import id.taufiq.bwamov.utils.startActivity
 import kotlinx.android.synthetic.main.activity_detail_movie.*
 
 class DetailMovieActivity : AppCompatActivity() {
@@ -43,7 +43,10 @@ class DetailMovieActivity : AppCompatActivity() {
         getPlayedData()
 
         btn_pilih_bangku.setOnClickListener {
-            startActivity(PilihBangkuActivity::class.java)
+            val toPilihBangkuActivity = Intent(this, PilihBangkuActivity::class.java)
+                .putExtra("data", data)
+
+            startActivity(toPilihBangkuActivity)
         }
 
     }

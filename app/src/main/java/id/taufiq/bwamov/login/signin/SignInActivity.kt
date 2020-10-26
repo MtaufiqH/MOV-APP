@@ -3,13 +3,13 @@ package id.taufiq.bwamov.login.signin
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
-import id.taufiq.bwamov.home.HomeActivity
 import id.taufiq.bwamov.R
+import id.taufiq.bwamov.home.HomeActivity
 import id.taufiq.bwamov.login.signup.SignUpActivity
 import id.taufiq.bwamov.model.Users
 import id.taufiq.bwamov.utils.MyPreferences
-import id.taufiq.bwamov.utils.startActivity
 import id.taufiq.bwamov.utils.showToast
+import id.taufiq.bwamov.utils.startActivity
 import kotlinx.android.synthetic.main.sign_in_activity.*
 
 
@@ -31,7 +31,7 @@ class SignInActivity : AppCompatActivity() {
         prefs.setValue("BOARDING_STATUS", "1")
 
         // Jika telah login sebelumnya, maka akan langsung ke home.
-        if (prefs.getValue("STATUS").equals("1")){
+        if (prefs.getValue("STATUS").equals("1")) {
             finishAffinity()
             startActivity(HomeActivity::class.java)
         }
@@ -43,7 +43,7 @@ class SignInActivity : AppCompatActivity() {
             if (username.equals("")) {
                 et_username_signin.error = "Masukkan username anda"
                 et_username_signin.requestFocus()
-            } else if(password.equals("")){
+            } else if (password.equals("")) {
                 et_password_signin.error = "Masukkan password anda"
                 et_password_signin.requestFocus()
 
@@ -52,9 +52,9 @@ class SignInActivity : AppCompatActivity() {
             }
 
         }
-        
-        
-        btn_daftar_akun.setOnClickListener { 
+
+
+        btn_daftar_akun.setOnClickListener {
             startActivity(SignUpActivity::class.java)
         }
 

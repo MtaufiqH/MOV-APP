@@ -113,7 +113,7 @@ class HomeFragment : Fragment() {
     private fun currency(harga: Double, walletUser: TextView?) {
         val localeId = Locale("in", "ID")
         val format = NumberFormat.getCurrencyInstance(localeId)
-        walletUser?.text = format.format(harga)
+        walletUser?.text = format.format(harga).toString()
     }
 
 }
